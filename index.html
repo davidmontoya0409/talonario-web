@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Lotería Benéfica</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlace a Google Fonts (opcional) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Enlace a fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div id="formulario">
+                <h2>Vender Puesto</h2>
+                <input type="text" id="nombreComprador" placeholder="Nombre del comprador"
+                    aria-label="Nombre del comprador">
+                <input type="number" id="numeroPuesto" placeholder="Número de puesto" min="1" max="100"
+                    aria-label="Número de puesto">
+                <input type="text" id="nombreResponsable" placeholder="Nombre del responsable"
+                    aria-label="Nombre del responsable">
+                <button onclick="agregarCompra()"><i class="fas fa-plus"></i> Agregar compra <i class="fas fa-ticket-alt"></i>
+
+                </button>
+                <p id="mensaje" class="mensaje"></p>
+            </div>
+
+            <div class="header-info">
+                <h1>Gran Lotería Benéfica</h1>
+                <p class="descripcion">Ayuda a nuestra causa y gana increíbles premios. ¡Cada número es una oportunidad!
+                </p>
+                <p class="premio">Gran Premio: <span>600€ en efectivo</span></p>
+                <p class="fecha-loteria">Juega con la lotería (Boyaca): <span id="fecha-sorteo">X</span></p>
+                <p class="responsable">Responsable: <span id="responsableActual">David Montoya</span></p>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="form-container">
+
+                <table id="tablaCompras">
+                    <thead>
+                        <tr>
+                            <th>Nombre Del Comprador</th>
+                            <th>N # Puesto</th>
+                            <th>Nombre Del Responsable</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se llenarán las filas de la tabla con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <div class="talonario" id="talonario">
+                    <!-- Aquí se generarán las casillas del talonario con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
